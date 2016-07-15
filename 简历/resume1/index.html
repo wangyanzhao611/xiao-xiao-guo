@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>resume</title>
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="css/reset.min.css"/>
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<section class="music" id="music">
+    <!--
+        preload:auto(默认值) 加载页面的时候就开始下载整个音频文件了  metadata开始加载页面的时候只是把头部基本信息加载下来  none开始加载页面的时候什么都不下载,只有播放的时候才开始下载(平时应该都用none,这样打开页面速度不会变慢)
+        loop:播放完成后重复继续播放
+        autoplay:自动播放
+
+        音频文件支持三种格式:mp3、wav、ogg,但是每一种格式都有个别浏览器不支持,所以想让支持的完善,我们需要准备三种音频格式
+        移动端我们一般使用MP3的格式就可以了
+    -->
+
+    <audio id="musicAudio" preload="none" loop src="audioFile/beyond.mp3"/>//
+     <!--<audio id="musicAudio" preload="metadata" loop autoplay>-->
+         <!--<source src="xxx.mp3" type="audio/mpeg"/>-->
+         <!--<source src="xxx.wav" type="audio/wav"/>-->
+         <!--<source src="xxx.ogg" type="audio/ogg"/>-->
+     <!--</audio>-->
+</section>
+<section class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide page1">
+
+            <img src="img/第一屏/1.png"/>
+            <img src="img/第一屏/3.png"/>
+            <img src="img/第一屏/2.png"/>
+            <img src="img/第一屏/4.png"/>
+            <p><b>王延召</b></p>
+        </div>
+        <div class="swiper-slide page2">
+            <div><p>基本信息</p></div>
+            <div>
+                <ul>
+                    <li>姓名：王延召</li>
+                    <li>学历：大专</li>
+                    <li>专业：前端开发</li>
+                    <li>毕业学院：江西冶金技师学院</li>
+                    <li>联系方式：13622045116</li>
+                    <li>邮箱：wangyanzhao611@126.com</li>
+                </ul>
+            </div>
+
+        <!--    <div>
+                <img src="img/page2-text1.png"/>
+                <img src="img/page2-text2.png"/>
+                <img src="img/page2-text3.png"/>
+                <img src="img/page2-text4.png"/>
+            </div>
+            -->
+        </div>
+
+        <div class="swiper-slide page3" >
+            <div><p>求职意向</p></div>
+            <ul><li>前端工程师</li></ul>
+        </div>
+
+        <div class="swiper-slide page4">
+
+            <div class="con">
+                <div class="con-inner">
+                    <img src="img/page4-title.png">
+                </div>
+                <ul>
+                    <li>2007/11 -- 2010/01</li>
+                    <li>青山控股|汽车修理工/机修工
+                        行业类别： 加工制造（原料加工/模具）|企业性质：民营|规模：1000-9999人|职位月薪：2001-4000
+                    </li>
+                </ul>
+                <ul>
+                    <li>2010/01 -- 2015/02</li>
+                    <li>
+                        行业类别： 零售/批发|企业性质：民营|规模：20人以下|职位月薪：10001-15000元/月
+                        工作描述：
+                        10年青山钢铁厂 辞职 同年 来天津  在天津港码头（新港区）先做业务 后来到经理
+                        主要联系船上的物料 废铁 伙食 污油等回收废品 至2015年由于这几年物价波动太大
+                        (特别是 钢铁和石油）
+                    </li>
+                </ul>
+                <ul>
+                    <li>2015/04 -- 至今</li>
+                    <li>15年4月份开始从事前端 先只是写静态页面 后来在麒麟传媒 做前端开发 今年5月辞职。。。</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="swiper-slide page5">
+            <div><img src="img/新建文件夹/1.gif"/></div>
+            <div><img src="img/新建文件夹/yq0KZVYqRgSAabIQAAlgE5wyoK4826.png"/></div>
+            <p>谢谢观赏</p>
+        </div>
+
+
+    </div>
+</section>
+
+<script charset="utf-8" type="text/javascript" src="js/swiper.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/fastClick.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+html{
+    font-size: 100px;
+}
+
+html,body,.swiper-container{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.music{
+    /*display: none;*/
+    position: absolute;
+    top: 0.2rem;
+    right: .2rem;
+    z-index: 2;
+    width: .4rem;
+    height: .4rem;
+    background: url("../audioFile/music.svg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.music.move{
+    -webkit-animation: musicMove 1.5s linear 0s infinite both;
+    animation:musicMove 1.5s linear 0s infinite both;
+}
+
+.move .musicAudio {
+    display: none;
+}
+
+@keyframes musicMove{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.page1{
+    background: url("../img/bg14.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.page2{
+    background: url("../img/bg11.jpg") no-repeat;
+    background-size: cover;
+}
+
+.page3{
+    background: url("../img/bg12.jpg") no-repeat;
+    background-size: cover;
+}
+
+.page4{
+    background: url("../img/bg13.jpg") no-repeat;
+    background-size: cover;
+}
+
+.opacity{
+    opacity: 0;
+}
+
+.swiper-slide .triangular{
+    width: 0.87rem;
+    height: 0.75rem;
+}
+
+.swiper-slide .triangular img{
+    width: 0.89rem;
+    height: 0.77rem;
+}
+
+.triangularBox{
+    position: absolute;
+    top: 0.73rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 2.64rem;
+    height: 3.05rem;
+
+}
+
+.page1 h3{
+    position: absolute;
+    top: 0.98rem;
+    left: 0.84rem;
+
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    color: white;
+    font-weight: normal;
+}
+
+#page1 h3{
+    -webkit-animation: zoomIn 1s linear 1s;
+    animation: zoomIn 1s linear 1s;
+}
+
+.swiper-slide .triangular:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0.88rem;
+    background: url("../img/三角bg-上.png") no-repeat ;
+    background-size: cover;
+}
+
+.swiper-slide .triangular:nth-child(2){
+    position: absolute;
+    top: 0.77rem;
+    left: 1.76rem;
+    background: url("../img/三角bg-下.png") no-repeat ;
+    background-size: cover;
+}
+
+.swiper-slide .triangular:nth-child(3){
+    position: absolute;
+    top: 1.54rem;
+    left: 1.76rem;
+    background: url("../img/三角bg-上.png") no-repeat ;
+    background-size: cover;
+}
+
+.swiper-slide .triangular:nth-child(4){
+    position: absolute;
+    top: 2.31rem;
+    left: 0.88rem;
+    background: url("../img/三角bg-下.png") no-repeat ;
+    background-size: cover;
+}
+
+.swiper-slide .triangular:nth-child(5){
+    position: absolute;
+    top: 1.54rem;
+    left: 0;
+    background: url("../img/三角bg-上.png") no-repeat ;
+    background-size: cover;
+}
+
+.swiper-slide .triangular:nth-child(6){
+    position: absolute;
+    top: 0.77rem;
+    left: 0;
+    background: url("../img/三角bg-下.png") no-repeat ;
+    background-size: cover;
+}
+
+#page1 .triangular:nth-child(1) img{
+    -webkit-animation: zoomIn 0.6s ease 0s;
+    animation: zoomIn 0.6s ease 0s;
+}
+
+#page1 .triangular:nth-child(2) img{
+    -webkit-animation: zoomIn 0.6s ease 0.2s;
+    animation: zoomIn 0.6s ease 0.2s;
+}
+
+#page1 .triangular:nth-child(3) img{
+    -webkit-animation: zoomIn 0.6s ease 0.4s;
+    animation: zoomIn 0.6s ease 0.4s;
+}
+
+#page1 .triangular:nth-child(4) img{
+    -webkit-animation: zoomIn 0.6s ease 0.6s;
+    animation: zoomIn 0.6s ease 0.6s;
+}
+
+#page1 .triangular:nth-child(5) img{
+    -webkit-animation: zoomIn 0.6s ease 0.8s;
+    animation: zoomIn 0.6s ease 0.8s;
+}
+
+#page1 .triangular:nth-child(6) img{
+    -webkit-animation: zoomIn 0.6s ease 1s;
+    animation: zoomIn 0.6s ease 1s;
+}
+
+
+
+
+.prev{
+    width: .25rem;
+    height: .2rem;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    margin-left: -0.125rem;
+}
+
+#page1 .prev{
+    -webkit-animation: prevMove 1.4s linear 1.5s infinite both;
+    animation: prevMove 1.4s linear 1.5s infinite both;
+}
+
+@-webkit-keyframes prevMove{
+    0%{
+
+        -webkit-transform: translateY(0rem);
+        transform: translateY(0rem);
+    }
+    1%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        -webkit-transform: translateY(-0.3rem);
+        transform: translateY(-0.3rem);
+    }
+}
+
+@keyframes prevMove{
+    0%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(-0.3rem);
+    }
+}
+
+/*page2 start*/
+.page2 h3{
+    position: absolute;
+    top: 1.2rem;
+    width: .96rem;
+    height: .3rem;
+    font-size: .24rem;
+    color: rgb(35, 163, 211);
+    font-weight: 300;
+}
+
+.page2 .pic{
+    position: absolute;
+    top: 2.0rem;
+    left: .28rem;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: rgb(227, 222, 222);
+    z-index: 3;
+}
+
+.page2 .pic .picInner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background: url("../img/1.png") no-repeat;
+    background-size: 100%;
+    background-clip: content-box;
+
+    box-shadow: rgba(0, 0, 0, 0.498039) 0rem .01rem .02rem;
+}
+
+.page2 .name{
+    padding: .15rem .45rem;
+    position: absolute;
+    top: 2.31rem;
+    left: 0.25rem;
+    width: 1.85rem;
+    height: .20rem;
+    line-height: .20rem;
+    font-size: .18rem;
+    text-align: right;
+    color: rgb(33, 47, 255);
+    background: rgba(255,255,255,.5);
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+
+.page2  .content{
+    padding: .15rem;
+    position: absolute;
+    top: 2.71rem;
+    left: 0.25rem;
+    width: 2.45rem;
+    height: 1.80rem;
+    background: rgba(255,255,255,.5);
+    box-shadow: rgba(0, 0, 0, 0.298039) 0rem .02rem .03rem;
+
+}
+
+.page2  .content p{
+    margin: 0.1rem 0;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: 300;
+    color: black;
+}
+
+#page2 h3{
+    opacity: 1;
+    -webkit-animation: bounceInDown 0.8s ease 0s 1 both;
+    animation: bounceInDown 0.8s ease 0s 1 both;
+}
+
+#page2 .pic{
+    opacity: 1;
+    -webkit-animation: zoomIn 0.8s ease 1s 1 both;
+    animation: zoomIn 0.8s ease 1s 1 both;
+}
+
+#page2 .name{
+    opacity: 1;
+    -webkit-animation: fadeInLeft 0.8s ease 0.4s 1 both;
+    animation: fadeInLeft 0.8s ease 0.4s 1 both;
+}
+
+#page2 .content{
+    opacity: 1;
+    -webkit-animation: fadeInUp 1s ease 1s 1 both;
+    animation: fadeInUp 1s ease 1s 1 both;
+}
+
+#page2 .prev{
+    opacity: 1;
+    -webkit-animation: prevMove 1.4s linear 1.5s infinite both;
+    animation: prevMove 1.4s linear 1.5s infinite both;
+}
+
+/*page3 start*/
+.page3 .skillPic{
+    position: absolute;
+    top: .20rem;
+    left: .30rem;
+
+    width: .90rem;
+    height: .90rem;
+    background: url("../img/skill.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.page3 .skillPic h3{
+    position: absolute;
+    top: .25rem;
+    left: .22rem;
+
+    width: .50rem;
+    font-size: .25rem;
+    line-height: .25rem;
+    color: rgb(35, 163, 211);
+    font-weight: normal;
+}
+
+.page3 .skill{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: .01rem solid rgba(255,255,255,.8);
+    border-radius:  .50rem;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0 0 0;
+    width: 3rem;
+    height: .70rem;
+    text-align: center;
+    font-size: .16rem;
+}
+
+/*.page3 .skill:nth-child(1){*/
+    /*display: block;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*background: green;*/
+/*}*/
+
+.page3 .skill:nth-child(2){
+    top: .50rem;
+}
+
+.page3 .skill:nth-child(3){
+    top: 1.40rem;
+}
+
+.page3 .skill:nth-child(4){
+    top: 2.30rem;
+}
+
+.page3 .skill:nth-child(5){
+    top: 3.20rem;
+}
+
+.page3 .skill:nth-child(6){
+    top: 4.10rem;
+}
+
+.page3 .skill h5{
+    color: white;
+    line-height: .30rem;
+    height: .30rem;
+    padding: .05rem;
+    font-weight: 300;
+}
+
+.page3 .skill span{
+    color: white;
+    line-height: .20rem;
+    height: .20rem;
+    padding: .05rem;
+}
+
+
+#page3 .skill:nth-child(2){
+    opacity: 1;
+    -webkit-animation: bounceInLeft 1s ease 0.2s both;
+    animation: bounceInLeft 1s ease 0.2s both;
+}
+
+#page3 .skill:nth-child(3){
+    opacity: 1;
+    -webkit-animation: bounceInLeft 1s ease 0.4s both;
+    animation: bounceInLeft 1s ease 0.4s both;
+}
+
+#page3 .skill:nth-child(4){
+    opacity: 1;
+    -webkit-animation: bounceInLeft 1s ease 0.6s both;
+    animation: bounceInLeft 1s ease 0.6s both;
+}
+
+#page3 .skill:nth-child(5){
+    opacity: 1;
+    -webkit-animation: bounceInLeft 1s ease 0.8s both;
+    animation: bounceInLeft 1s ease 0.8s both;
+}
+
+#page3 .skill:nth-child(6){
+    opacity: 1;
+    -webkit-animation: bounceInLeft 1s ease 1s both;
+    animation: bounceInLeft 1s ease 1s both;
+}
+
+#page3 .prev{
+    opacity: 1;
+    -webkit-animation: prevMove 1.4s linear 1.5s infinite both;
+    animation: prevMove 1.4s linear 1.5s infinite both;
+}
+
+#page3 .skillPic h3{
+    opacity: 1;
+    -webkit-animation: rollIn 1.0s ease 0s 1 both;
+    animation: rollIn 1.0s ease 0s 1 both;
+}
+
+/*page4 start*/
+.page4 .workPic{
+    position: absolute;
+    top: .20rem;
+    left: .30rem;
+
+    width: .90rem;
+    height: .90rem;
+    background: url("../img/skill.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.page4 .workPic h3{
+    position: absolute;
+    top: .25rem;
+    left: .22rem;
+
+    width: .50rem;
+    font-size: .25rem;
+    line-height: .25rem;
+    color: rgb(35, 163, 211);
+    font-weight: normal;
+}
+
+.page4 .workContent{
+    position: absolute;
+    top: 2rem;
+    left: .22rem;
+
+    width: 100%;
+    height: 4rem;
+}
+
+.page4 .line{
+    display: block;
+    position: absolute;
+    left: .78rem;
+    width: .02rem;
+    height: 3.12rem;
+    background: white;
+    opacity: 0.8;
+}
+
+.page4 .workContent i{
+    position: absolute;
+    top: .20rem;
+    left: .84rem;
+    display: block;
+    width: 0;
+    height: 0;
+    padding: 0;
+    line-height: 0;
+    border: .06rem solid transparent;
+    border-left-color: rgb(74, 205, 146);;
+}
+
+.page4 .workContent div{
+    position: relative;
+    margin-bottom: .20rem;
+
+    height: .70rem;
+    width: 100%;
+}
+
+.page4 .workContent span{
+    position: absolute;
+    top: .20rem;
+    left: .10rem;
+    display: block;
+    width: .60rem;
+    height: .30rem;
+    color: white;
+    font-size: .12rem;
+}
+
+.page4 .workContent p{
+    position: absolute;
+    top: .20rem;
+    right: .40rem;
+    width: 1.80rem;
+    height: .45rem;
+    color: white;
+    font-size: .14rem;
+}
+
+
+#page4 .work1 span{
+    opacity: 1;
+    -webkit-animation: fadeInLeft 1s ease 0.7s 1 both;
+    animation: fadeInLeft 1s ease 0.7s 1 both;
+}
+
+#page4 .work1 i{
+    opacity: 1;
+    -webkit-animation: fadeIn 2s ease 0.7s 1 both;
+    animation: fadeIn 2s ease 0.7s 1 both;
+}
+
+#page4 .work1 p{
+    opacity: 1;
+    -webkit-animation: fadeInRight 1s ease 0.7s 1 both;
+    animation: fadeInRight 1s ease 0.7s 1 both
+}
+
+#page4 .work2 span{
+    opacity: 1;
+    -webkit-animation: fadeInLeft 1s ease 1.1s 1 both;
+    animation: fadeInLeft 1s ease 1.1s 1 both;
+}
+
+#page4 .work2 i{
+    opacity: 1;
+    -webkit-animation: fadeIn 2s ease 1.1s 1 both;
+    animation: fadeIn 2s ease 1.1s 1 both;
+}
+
+#page4 .work2 p{
+    opacity: 1;
+    -webkit-animation: fadeInRight 1s ease 1.1s 1 both;
+    animation: fadeInRight 1s ease 1.1s 1 both
+}
+
+#page4 .work3 span{
+    opacity: 1;
+    -webkit-animation: fadeInLeft 1s ease 1.6s 1 both;
+    animation: fadeInLeft 1s ease 1.6s 1 both;
+}
+
+#page4 .work3 i{
+    opacity: 1;
+    -webkit-animation: fadeIn 2s ease 1.6s 1 both;
+    animation: fadeIn 2s ease 1.6s 1 both;
+}
+
+#page4 .work3 p{
+    opacity: 1;
+    -webkit-animation: fadeInRight 1s ease 1.6s 1 both;
+    animation: fadeInRight 1s ease 1.6s 1 both
+}
+
+#page4 .prev{
+    opacity: 1;
+    -webkit-animation: prevMove 1.4s linear 1.5s infinite both;
+    animation: prevMove 1.4s linear 1.5s infinite both;
+}
+
+#page4 .workPic h3{
+    opacity: 1;
+    -webkit-animation: rollIn 1.0s ease 0s 1 both;
+    animation: rollIn 1.0s ease 0s 1 both;
+}
